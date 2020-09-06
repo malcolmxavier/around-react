@@ -11,7 +11,6 @@ function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
   const [isAddCardPopupOpen, setIsAddCardPopupOpen] = React.useState(false);
   const [selectedCard, setSelectedCard] = React.useState(false);
-  const [isImagePopupOpen, setIsImagePopupOpen] = React.useState(false);
   const [isDeleteCardPopupOpen, setIsDeleteCardPopupOpen] = React.useState(false);
 
   function handleEditAvatarClick() {
@@ -28,7 +27,6 @@ function App() {
 
   function handleCardClick(card) {
     setSelectedCard(card);
-    setIsImagePopupOpen(true);
   }
 
   function handleDeleteCardClick() {
@@ -39,7 +37,7 @@ function App() {
     setIsAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsAddCardPopupOpen(false);
-    setIsImagePopupOpen(false);
+    setSelectedCard(false);
   }
 
   return (
@@ -69,7 +67,7 @@ function App() {
         <input name='link' id='card-url' className='popup__input popup__input_type_url' type='url' placeholder='Image URL' required />
         <span id='card-url-error' className='popup__error'></span>
       </PopupWithForm>
-      <PopupWithImage image='' title='Image Caption' card={selectedCard} onClose={closeAllPopups} isOpen={isImagePopupOpen}/>
+      <PopupWithImage image='' title='Image Caption' card={selectedCard} onClose={closeAllPopups} isOpen={selectedCard}/>
       <PopupWithForm name="delete-card" action='Delete Card' title='Are you sure?' button='yes' onClose={closeAllPopups} isOpen={isDeleteCardPopupOpen}/>
       <Footer />
     </div>
