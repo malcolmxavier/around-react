@@ -14,7 +14,8 @@ function Main(props) {
       setUserName(res.name);
       setUserDescription(res.job);
       setUserAvatar(res.avatar);
-    });
+    })
+    .catch(err => console.log(err));
 
     api.getCardList()
     .then(res => {
@@ -25,6 +26,7 @@ function Main(props) {
         likes: card.likes.length
       })));
     })
+    .catch(err => console.log(err))
 
   }, [])
 

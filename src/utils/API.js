@@ -9,7 +9,6 @@ class API {
         headers: this._headers
       })
       .then(res => res.ok ? res.json() : Promise.reject(res.status + ' Error: ' + res.statusText))
-      .catch(err => console.log(err))
     };
   
     setUserInfo(name, about) {
@@ -42,7 +41,6 @@ class API {
         headers: this._headers
       })
       .then(res => res.ok ? res.json() : Promise.reject(res.status + ' Error: ' + res.statusText))
-      .catch(err => console.log(err))
     };
   
     addCard({name, link}) {
