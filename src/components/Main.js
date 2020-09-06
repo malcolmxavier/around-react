@@ -1,5 +1,5 @@
 import React from 'react';
-import {api} from './API.js';
+import {api} from '../utils/API.js';
 import Card from './Card.js';
 
 function Main(props) {
