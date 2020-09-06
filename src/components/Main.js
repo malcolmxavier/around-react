@@ -28,8 +28,6 @@ function Main(props) {
 
   }, [])
 
-  console.log(cards);
-
   return (
     <main className='content'>
       <section className='profile'>
@@ -50,7 +48,7 @@ function Main(props) {
       <section className='photo-grid'>
         <ul className='photo-grid__list'>
           {cards.map((card) => <Card
-            key={card.id}
+            key={card.key}
             title={card.title}
             image={card.image}
             likes={card.likes}
