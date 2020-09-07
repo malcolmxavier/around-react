@@ -38,6 +38,7 @@ function App() {
     setIsEditProfilePopupOpen(false);
     setIsAddCardPopupOpen(false);
     setSelectedCard(false);
+    setIsDeleteCardPopupOpen(false);
   }
 
   return (
