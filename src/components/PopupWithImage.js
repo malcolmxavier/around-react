@@ -7,8 +7,8 @@ function PopupWithImage(props) {
                 <div className='popup__container popup__container_type_image'>
                 <figure className='figure'>
                     <button className='close-button' aria-label='Close Image Popup' onClick={props.onClose}></button>
-                    <img className='popup__image' alt={props.card.title} src={props.card.image}/>
-                    <figcaption className='popup__caption'>{props.card.title}</figcaption>
+                    <img className='popup__image' alt={props.title} src={props.image}/>
+                    <figcaption className='popup__caption'>{props.title}</figcaption>
                 </figure>
                 </div>
             </section>
