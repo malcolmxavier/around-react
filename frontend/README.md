@@ -1,4 +1,4 @@
-Malcolm X's 4th, 5th, 6th, 7th, 8th, 9th, 10th, and 11th Yandex Project v1.0
+Malcolm X's 4th, 5th, 6th, 7th, 8th, 9th, 10th, 11th, and 12th Yandex Project v1.0
 
 This is a sample project to demonstrate grasp of HTML, CSS, JS, and React skills.
 
